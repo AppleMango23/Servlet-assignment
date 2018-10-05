@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome-to-Surveyatia</title>
+</head>
+<style>
+	body{
+		background-color: #ccffff;
+
+	}
+
+	#tata{
+		border: 30px solid #66ff99;
+		background-color: #66ff99;
+		color: white;
+		
+	}
+
+	#tete{
+		border-color: white;
+		background-color: white;
+		text-align: center;
+		border-block-end: 0cm;
+	}
+
+	.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	
+	}
+	.button:hover {background-color: #3e8e41}
+	.button:active {
+	background-color: #3e8e41;
+	
+	transform: translateY(4px);
+	}
+	.button4 {border-radius: 12px;}
+
+	.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	}
+	/* Hide the browser's default checkbox */
+	.container input {
+		position:absolute;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		background-color: #eee;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.container:hover input ~ .checkmark {
+		background-color: #ccc;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	.container input:checked ~ .checkmark {
+		background-color: #2196F3;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.container input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.container .checkmark:after {
+		left: 9px;
+		top: 5px;
+		width: 5px;
+		height: 10px;
+		border: solid white;
+		border-width: 0 3px 3px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	label{
+		float: left;
+	}
+}
+</style>
+<body>
+	<form action = "totaleh" >
+	<h1 id="tata" style="border-radius: 20px"><font face="verdana" color="white">Welcome to Surveyatia</font></h1>
+	
+	
+
+	<div id = "tete" style="border-radius: 20px">
+		<p><font face="verdana" color="green"><strong>Fill in the blank question below:  </strong></font></p>
+		<br>
+
+		<p><font face="verdana" color="green">What is your favourite food: </font></p>
+		<input type="num1" name = "num1"><br>
+
+		<p><font face="verdana" color="green">What is your hobby: </font></p>
+		<input type="counter" name = "counter"><br>
+
+		<p><font face="verdana" color="green">What will you do when you have free time: </font></p>
+		<input type="char" name = "char"><br>
+
+		<p><font face="verdana" color="green">Where is one place you feel most like yourself: </font></p>
+		<input type="char" name = "char"><br>
+
+		<p><font face="verdana" color="green">Where is your favorite place to escape to: </font></p>
+		<input type="char" name = "char"><br>
+
+		<p><font face="verdana" color="green">Who do you think has had the largest influence on the person you are today: </font></p>
+		<input type="char" name = "char"><br>
+
+		<p><font face="verdana" color="green"> If you could change one thing about yourself what would it be: </font></p>
+		<input type="char" name = "char"><br>
+
+		<p><font face="verdana" color="green">Who are you closest to in your family: </font></p>
+		<input type="char" name = "char"><br>
+
+		<p><font face="verdana" color="green">Who is the one person in this world that knows you best: </font></p>
+		<input type="char" name = "char"><br>
+
+		
+		
+		
+		<br>
+		<p><font face="verdana" color="green"><strong>Tick & blank question below:  </strong></font></p>
+		<br>
+
+		<label class = "container">
+			<input type="checkbox" name="vehicle" value="Bike"><font face="verdana" color="green" size = "3">You are single?       </font><br>
+			<span class = "checkmark">
+	
+			</span>			
+		</label>
+
+		<label class = "container">
+			<input type="checkbox" name="vehicle" value="Bike"><font face="verdana" color="green" size = "3">Do you have a car?</font><br>
+			<span class = "checkmark"></span>			
+		</label>
+
+		
+		<label class = "container">
+			<input type="checkbox" name="vehicle" value="Bike"><font face="verdana" color="green" size = "3">Want receive email about the new update?</font><br>
+			<span class = "checkmark"></span>			
+		</label>
+
+		
+		
+		<br>
+		
+		
+		<button class ="button button4" type="submit" value = "submit">submit</button>
+		<button class ="button button4" type="reset" value = "reset">reset</button>
+		
+		<br>
+		<a href = "pages/test1.html"><strong><font size="6">Next</font></strong></a>
+	</div>
+
+	
+
+	
+	
+	</form>
+	
+	
+	
+</body>
+</html>
